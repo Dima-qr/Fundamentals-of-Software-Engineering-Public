@@ -1,1 +1,16 @@
+a = int(input())
+b = int(input())
+b = (b - a) % 10000
+
+summa = 0.0
+
+if b <= 300:
+    summa = 21.0
+elif b <= 600:
+    summa = 21.0 + (b - 300) * 0.06
+elif b <= 800:
+    summa = 21.0 + 18.0 + (b - 600) * 0.04
+else:
+    summa = 21.0 + 18.0 + 8.0 + (b - 800) * 0.025
+print(round(summa, 2))
 
